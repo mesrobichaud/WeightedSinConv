@@ -10,6 +10,7 @@ The harmonic directory is adapted from [Kulikov and Lempitsky](https://github.co
 The Loader file functionalizes methods provided in train_CVPPP from the original project and adds more functionality:
 - pixel-wise weighted loss (loader/make_weight_map)
 - specialized file readers for CVPPP (RGB) and HeLa (greyscale) image sets 
+- evaluation metrics (BDC, IOU, DiC)
 
 ## Selecting Weight Method 
 
@@ -17,7 +18,7 @@ Choose from add_edges or add_borders (uses make_weight_map) to generate the weig
 
 ## K-Means for Instance Segmentation
 
-The classical.ipynb notebook demonstrates a k-means implementation to compare to the deep learning method. Images of its performance are saved to img/km. 
+The classical.ipynb notebook demonstrates a k-means implementation to compare to the deep learning method. Images of its performance are saved to **img/km**. 
 
 
 ## Training 
