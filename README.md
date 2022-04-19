@@ -1,0 +1,2 @@
+# WeightedSinConv
+Course project
