@@ -22,8 +22,8 @@ The classical.ipynb notebook demonstrates a k-means implementation to compare to
 
 
 ## Training 
-- hela_trainer notebook is used to train the network with or without pre-training 
-- the stored model is then loaded to the demo or testing notebooks
+1. hela_trainer notebook is used to train the network with or without pre-training 
+2. Open demo or testing notebooks to evaluate the model
 
 ## Results 
 
