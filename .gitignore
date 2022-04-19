@@ -3,3 +3,5 @@ models/
 
 *checkpoints/
 *__pycache__/
+
+.DS_Store

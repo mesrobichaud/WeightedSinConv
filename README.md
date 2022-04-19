@@ -26,4 +26,4 @@ The classical.ipynb notebook demonstrates a k-means implementation to compare to
 
 ## Results 
 
-Results from the test HeLa set for the two top networks (edge width of 5, and distance-based method, wx) are shown along with the ground truth for three images in the img directory.
+Results from the test HeLa set for the two top networks (edge width of 5, and distance-based method, wx) are shown along with the ground truth for three images in the \bf{img} directory.
