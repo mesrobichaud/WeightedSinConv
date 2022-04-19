@@ -127,17 +127,12 @@ class Reader(data.Dataset):
             self.cache[idx] = (img, target, edge)
 
         seed = np.random.randint(2147483647)
-        np.random.seed(seed)
-        displacement_val = np.random.randn(2, 5, 5) * 10
-        disp = torch.tensor(displacement_val)
         
-        #NOT WORKING random.seed(seed)
         torch.manual_seed(seed)
         if self.transform is not None:
             img = self.transform(img)
             #img = etorch.deform_grid(img,disp,order=1)
             
-        #NOT WORKING random.seed(seed)
         torch.manual_seed(seed)
         if self.labels:
             if self.target_transform is not None:
@@ -145,7 +140,6 @@ class Reader(data.Dataset):
                 #target = etorch.deform_grid(target,disp,order=1)
                 
                 
-        #NOT WORKING random.seed(seed)
         torch.manual_seed(seed)
         if self.edges:
             if self.target_transform is not None:
@@ -244,7 +238,7 @@ class cvppp:
                  
         self.edges = self.add_edges()
         
-        if test:
+        if test == False:
             self.transform = transforms.Compose(
                 [transforms.RandomHorizontalFlip(),
                  transforms.RandomVerticalFlip(),
